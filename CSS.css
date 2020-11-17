@@ -1,0 +1,31 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px 300px 300px;
+    grid-template-rows: 200px 400px 200px;
+    background-color:beige;
+    grid-gap: 20px;
+    padding: 20px;
+    place-content: normal;
+}
+
+
+.Heading{
+    grid-column: 2/ span 3;
+    background-color: rgb(255,110,174, 0.5);
+}
+.Left {
+    grid-column: 2;
+    background-color: rgb(255,110,174, 0.5);
+}
+.Middle {
+    background-color: rgb(255,110,174, 0.5);
+}
+
+.Right{
+    background-color: rgb(255,110,174, 0.5);
+}
+.Footer{
+    grid-column: 2/ span 3;
+    background-color: rgb(255,110,174, 0.5);
+}
