@@ -3,19 +3,38 @@
 <head>
     <title>JavaScript</title>
     <script>
-             document.getElementById('P1').console.log('This Text element is made from a Script in the Head');
+            function change_text () {
+                document.getElementById("P1").innerHTML="Paragraph changed using script in the head";
+            }
+            function  change_color(){
+                 document.getElementById("P1").style="color: red;font-size: larger";
+            }
     </script>
 </head>
 
+
 <body>
-    <p id="P1"></p>
 
-    <p id="P2">
+<h1>This is a java Script Exercise</h1>
+<br><br>
+<p id="P1" style="font-size: larger ">
+    <script>
+        document.getElementById("P1").innerHTML = "Paragraph changed using script in the body";
+    </script>
+</p>
+<br><br>
+<p id="P3">
+    <button type="button"
+        onclick="change_text()"> click to change the text
+    </button>
+<br><br>
+    <button type="button"
+        onclick="change_color()"> click to change the text's color
+    </button>
+</p>
 
-    </p>
+<p id="P4">
 
-    <p id="P3"></p>
-
-    <p id="P4"></p>
+</p>
 </body>
 </html>
