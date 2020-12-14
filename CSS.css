@@ -1,31 +1,52 @@
+body{
+    background-repeat: no-repeat;
+    background-color:#3f434c;
+}
 
+h1{
+    -webkit-text-stroke: 2px black;
+}
 .grid-container {
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px 300px 300px;
-    grid-template-rows: 200px 400px 200px;
-    background-color:beige;
-    grid-gap: 20px;
-    padding: 20px;
+    background-image: url("image-Business-sketch-on-black-wall-stocky-ai-9057548.jpg");
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-color:#3f434c;
+    display: inline-grid;
+    grid-template-columns: 300px 300px 300px 300px 300px;
+    grid-template-rows: 200px 300px 300px 200px;
+    grid-gap: 3px;
+    padding: 150px;
     place-content: normal;
+    font-style: italic;
+    -webkit-text-stroke: 0.2px black;
+
 }
 
 
 .Heading{
-    grid-column: 2/ span 3;
-    background-color: rgb(255,110,174, 0.5);
+    grid-column: 2/ span 4;
+    background-color:rgb(48, 50, 53, 0.9);
 }
 .Left {
-    grid-column: 2;
-    background-color: rgb(255,110,174, 0.5);
+    grid-column: 1;
+    grid-row: 1/ span 4 ;
+    background-color:rgb(48, 50, 53, 0.9);
+    text-align: center;
+
+
 }
 .Middle {
-    background-color: rgb(255,110,174, 0.5);
+    grid-column: 2/ span 2;
+    grid-row: 2/ span 2  ;
+    background-color:rgb(48, 50, 53, 0.9);
 }
 
 .Right{
-    background-color: rgb(255,110,174, 0.5);
+    background-color:rgb(48, 50, 53, 0.9);
+    grid-row: 2/ span 2  ;
+    grid-column: 4/ span 2;
 }
 .Footer{
-    grid-column: 2/ span 3;
-    background-color: rgb(255,110,174, 0.5);
+    grid-column: 2/ span 4;
+    background-color:rgb(48, 50, 53, 0.9);
 }
