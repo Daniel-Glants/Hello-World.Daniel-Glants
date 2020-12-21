@@ -28,6 +28,12 @@ h1{
   grid-column: 8;
   grid-row:1;
 }
+a{
+    align-content: center;
+    color: #e1e1e1;
+    font-size:50px;
+}
+
 .grid-container {
     background-image: url("image-Business-sketch-on-black-wall-stocky-ai-9057548.jpg");
     background-blend-mode: lighten;
