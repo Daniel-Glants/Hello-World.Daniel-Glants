@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Preferences in movies:</title>
+</head>
+<body>
+        {% set page_name = 'Movies' %}
+
+{% include('Preferences.html') %}
+
+        {% if premision == 'TRUE' %}
+             <ol>
+                {% for movie in movies %}
+                 <li>{{ movie }}</li>
+                {% endfor %}
+             </ol>
+        {% else %}
+            <h1>you dont have premission</h1>
+        {% endif %}
+
+</body>
+</html>
