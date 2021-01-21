@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>assignment9</title>
+</head>
+<body>
+<h1>Search Form (GET method)</h1>
+<form action="/Assignment9" method="GET">
+    <input name="name" placeholder="Search Person">
+    <input type="submit">
+</form>
+    {{name}}
+<br>
+    {{email}}
+
+
+{% if session %}
+    hi, {{ username }}
+
+    this is generic messege because I cant succeed to get the data from POST.
+
+{% else %}
+
+    <h1>Registration Form (POST method)</h1>
+<form action="/Assignment9" method="POST">
+    <input type="username" placeholder="username" id="username" required><br><br>
+    <input type="E-mail" placeholder="E-mail" id="E-mail" required><br><br>
+    <input type="password" placeholder="Password" id="password" required><br><br>
+    <input type="password" placeholder="Confirm Password" id="confirm_password" required><br><br>
+    <button type="submit" class="pure-button pure-button-primary">submit</button>
+</form>
+
+ {% endif %}
+
+{##}
+{#  <label>Password: <input name="password" type="password" onChange="onChange()" /> </label><br />#}
+{#  <label>Confirm : <input name="confirm"  type="password" onChange="onChange()" /> </label><br />#}
+{#  <input type="submit" />#}
+{##}
+{#</form>#}
+
+<script src="{{ url_for('static',filename='js/Password.js')}}"></script>
+
+
+</body>
+</html>
